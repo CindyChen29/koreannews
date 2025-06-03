@@ -1,0 +1,26 @@
+{
+  "name": "한레터 HanLetter",
+  "short_name": "HanLetter",
+  "description": "한국의 소식을 전하는 디지털 뉴스레터",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["news", "magazines"],
+  "lang": "ko-KR"
+}

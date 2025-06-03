@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "title": "Korea's Digital Innovation: The Future of AI Technology",
+    "slug": "korea-digital-innovation-ai-future",
+    "author": "Michael Kim",
+    "date": "2025-06-03",
+    "coverImage": "/placeholder.svg?height=400&width=600",
+    "excerpt": "South Korea is leading the world in artificial intelligence technology. We explore the latest AI trends and innovative approaches by Korean companies.",
+    "content": "South Korea's digital innovation is reaching a new turning point. Particularly in the field of artificial intelligence (AI) technology, Korean companies are showing innovative approaches that are attracting worldwide attention.\n\nMajor companies such as Samsung Electronics, LG Electronics, Naver, and Kakao are making large-scale investments in AI technology development, further strengthening Korea's digital competitiveness.\n\nThe government is also actively supporting AI technology development through the 'K-Digital New Deal' policy, and Korea is expected to establish itself as a global AI technology leader in the future.\n\nIn particular, Korean researchers' achievements in natural language processing, computer vision, and machine learning are remarkable, and these technologies are being applied to real life, contributing to improving the quality of life for citizens.",
+    "tags": ["Technology", "AI", "Innovation", "Digital"]
+  },
+  {
+    "id": "2",
+    "title": "Global Expansion of K-Culture: The New Wave of Hallyu",
+    "slug": "k-culture-global-expansion-hallyu-wave",
+    "author": "Sarah Park",
+    "date": "2025-06-02",
+    "coverImage": "/placeholder.svg?height=400&width=600",
+    "excerpt": "Beyond K-pop and K-dramas, K-food and K-beauty are spreading worldwide. We analyze the phenomenon of Hallyu's expanding influence globally.",
+    "content": "The Korean Wave (Hallyu) is having an increasingly significant impact on the global economy, beyond being just a cultural phenomenon.\n\nFollowing the success of K-pop artists like BTS and BLACKPINK, K-content such as 'Squid Game' and 'Parasite' are gaining huge popularity worldwide.\n\nNow, Hallyu is expanding beyond music and dramas to various fields such as K-food, K-beauty, and K-fashion. Korean foods like kimchi, bulgogi, and bibimbap are appearing on dining tables around the world, and Korean cosmetics and skincare products are also receiving great love in the global market.\n\nAccording to the Ministry of Culture, Sports and Tourism, the economic ripple effect of Hallyu in 2024 is estimated to be about 15 trillion won, a 20% increase from the previous year.\n\nFor the continued growth of Hallyu, securing content diversity and localization strategies will be important.",
+    "tags": ["Culture", "Hallyu", "K-pop", "Global"]
+  },
+  {
+    "id": "3",
+    "title": "Green Energy Transition: Korea's Green New Deal Policy",
+    "slug": "green-energy-transition-korea-green-new-deal",
+    "author": "David Lee",
+    "date": "2025-06-01",
+    "coverImage": "/placeholder.svg?height=400&width=600",
+    "excerpt": "We examine Korea's eco-friendly energy policies and renewable energy expansion plans to achieve the carbon neutrality 2050 goal.",
+    "content": "The Green New Deal policy promoted by the Korean government is beginning to show tangible results.\n\nTo achieve the 2050 carbon neutrality goal, the government announced a plan to expand the proportion of renewable energy from the current 9% to 30% by 2030.\n\nAlong with expanding renewable energy generation facilities such as solar and wind power, intensive investment is also being made in energy storage system (ESS) technology development. In particular, Korea has world-class technology in the offshore wind power generation field, so its growth potential is highly evaluated.\n\nPolicies to revitalize the hydrogen economy are also being actively promoted. The hydrogen economy ecosystem is being built through expanding hydrogen vehicle distribution, building hydrogen charging station infrastructure, and developing green hydrogen production technology.\n\nPrivate companies are also actively engaging in eco-friendly management through ESG management, accelerating the green transition created together by the government and private sector.",
+    "tags": ["Environment", "Energy", "Green New Deal", "Carbon Neutral"]
+  },
+  {
+    "id": "4",
+    "title": "Growth and Challenges of Korea's Startup Ecosystem",
+    "slug": "korean-startup-ecosystem-growth-challenges",
+    "author": "Jennifer Choi",
+    "date": "2025-05-31",
+    "coverImage": "/placeholder.svg?height=400&width=600",
+    "excerpt": "We analyze the current status and challenges of Korea's startup ecosystem, which is growing through unicorn company creation and global expansion.",
+    "content": "Korea's startup ecosystem is growing at a rapid pace.\n\nAs of 2024, Korea has a total of 15 unicorn companies (companies with a corporate value of over 1 trillion won), an increase of 3 from the previous year. Coupang, Krafton, and Yanolja are representative success stories.\n\nThe government's 'Startup Korea' policy and active investment by private venture capital are supporting this growth. In particular, innovative startups are emerging one after another in the fintech, bio-health, and mobility fields.\n\nHowever, there are still challenges to be solved. Strengthening capabilities for global market entry, securing excellent talent, and improving regulations are pointed out as major challenges.\n\nAlso, after COVID-19, startups in the edutech and healthtech fields are attracting attention due to increased demand for non-contact services, and their growth is expected to become a new driving force for Korea's startup ecosystem.",
+    "tags": ["Startup", "Unicorn", "Venture", "Innovation"]
+  },
+  {
+    "id": "5",
+    "title": "Digital Education Innovation: The Future of EdTech",
+    "slug": "digital-education-innovation-edutech-future",
+    "author": "Amy Jung",
+    "date": "2025-05-30",
+    "coverImage": "/placeholder.svg?height=400&width=600",
+    "excerpt": "We examine the impact of accelerated digital education transformation and EdTech technology development on educational settings after COVID-19.",
+    "content": "Digital innovation in Korea's educational field is accelerating, triggered by the COVID-19 pandemic.\n\nAccording to the Ministry of Education's 'Digital-based Education Innovation Plan', digital education infrastructure is being built in all schools nationwide, and educational services using cutting-edge technologies such as AI tutors and VR/AR educational content are spreading.\n\nIn particular, AI-based educational platforms that support personalized learning are attracting attention. Services that provide optimized learning paths by analyzing learners' levels and tendencies are greatly improving educational effectiveness.\n\nEdTech companies are also showing rapid growth. Existing educational companies such as Woongjin Thinkbig, Daekyo, and Chunjae Education are accelerating digital transformation, and new EdTech startups are also entering the market with innovative services.\n\nHowever, challenges such as resolving the digital divide, strengthening teachers' digital capabilities, and protecting personal information must also be solved together.",
+    "tags": ["Education", "EdTech", "Digital", "AI"]
+  }
+]
