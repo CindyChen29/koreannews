@@ -88,13 +88,15 @@ export default function HomePage() {
       </header>
 
       {/* Breaking News Banner */}
-      <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-2">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center space-x-3">
-            <span className="bg-white text-red-600 px-2 py-1 rounded text-xs font-medium">BREAKING</span>
-            <p className="text-sm font-body">Latest updates on Korean tech industry developments</p>
+      <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-2 cursor-pointer hover:from-red-700 hover:to-red-800 transition-colors">
+        <Link href="/breaking-news">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex items-center space-x-3">
+              <span className="bg-white text-red-600 px-2 py-1 rounded text-xs font-medium">BREAKING</span>
+              <p className="text-sm font-body">Latest updates on Korean tech industry developments</p>
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
 
       {/* Search and Filter Section */}
@@ -186,7 +188,11 @@ export default function HomePage() {
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {featuredArticle.tags.map((tag) => (
-                      <span key={tag} className="bg-slate-100 text-slate-700 text-xs px-2 py-1 rounded font-medium">
+                      <span
+                        key={tag}
+                        onClick={() => setSelectedCategory(tag)}
+                        className="bg-slate-100 text-slate-700 text-xs px-2 py-1 rounded font-medium hover:bg-violet-100 hover:text-violet-700 cursor-pointer transition-colors"
+                      >
                         {tag}
                       </span>
                     ))}
@@ -218,47 +224,55 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredArticles.map((article, index) => (
-              <article
-                key={article.id}
-                className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow"
-              >
-                <Image
-                  src={article.coverImage || "/placeholder.svg"}
-                  alt={article.title}
-                  width={400}
-                  height={240}
-                  className="w-full h-48 object-cover"
-                />
+              <Link href={`/article/${article.slug}`} key={article.id}>
+                <article
+                  className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-md transition-all hover:border-violet-300 cursor-pointer transform hover:-translate-y-1"
+                >
+                  <Image
+                    src={article.coverImage || "/placeholder.svg"}
+                    alt={article.title}
+                    width={400}
+                    height={240}
+                    className="w-full h-48 object-cover"
+                  />
 
-                <div className="p-5">
-                  <div className="flex items-center text-xs text-slate-500 mb-2">
-                    <Calendar className="h-3 w-3 mr-1" />
-                    <span>{article.date}</span>
-                    <span className="mx-2">•</span>
-                    <Clock className="h-3 w-3 mr-1" />
-                    <span>5 min read</span>
-                  </div>
-
-                  <h3 className="text-lg font-display text-slate-900 mb-2 leading-tight hover:text-violet-700 transition-colors">
-                    <Link href={`/article/${article.slug}`}>{article.title}</Link>
-                  </h3>
-
-                  <p className="text-slate-600 text-sm mb-3 font-body leading-relaxed">
-                    {article.excerpt.substring(0, 100)}...
-                  </p>
-
-                  <div className="flex items-center justify-between">
-                    <div className="flex flex-wrap gap-1">
-                      {article.tags.slice(0, 2).map((tag) => (
-                        <span key={tag} className="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">
-                          {tag}
-                        </span>
-                      ))}
+                  <div className="p-5">
+                    <div className="flex items-center text-xs text-slate-500 mb-2">
+                      <Calendar className="h-3 w-3 mr-1" />
+                      <span>{article.date}</span>
+                      <span className="mx-2">•</span>
+                      <Clock className="h-3 w-3 mr-1" />
+                      <span>5 min read</span>
                     </div>
-                    <span className="text-xs text-slate-500">{article.author}</span>
+
+                    <h3 className="text-lg font-display text-slate-900 mb-2 leading-tight group-hover:text-violet-700 transition-colors">
+                      {article.title}
+                    </h3>
+
+                    <p className="text-slate-600 text-sm mb-3 font-body leading-relaxed">
+                      {article.excerpt.substring(0, 100)}...
+                    </p>
+
+                    <div className="flex items-center justify-between">
+                      <div className="flex flex-wrap gap-1">
+                        {article.tags.slice(0, 2).map((tag) => (
+                          <span
+                            key={tag}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setSelectedCategory(tag);
+                            }}
+                            className="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded hover:bg-violet-100 hover:text-violet-700 cursor-pointer transition-colors"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <span className="text-xs text-slate-500">{article.author}</span>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </Link>
             ))}
           </div>
 
@@ -306,9 +320,11 @@ export default function HomePage() {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-white/70"
+                className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-white/70 focus:border-white focus:ring-white"
               />
-              <Button className="bg-white text-violet-700 hover:bg-slate-100">Subscribe</Button>
+              <Button className="bg-white text-violet-700 hover:bg-slate-100 hover:scale-105 transform transition-all">
+                Subscribe
+              </Button>
             </div>
           </div>
         </section>
